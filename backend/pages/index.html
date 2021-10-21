@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM con JS</title>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <header>
+            <h1>ToDo</h1>
+            <div id="input-container">
+                <form id="todo-form" onsubmit="submit">
+                    <input type="text" id="input-todo" placeholder="Escribir tarea">
+                    <button id="add-todo">Agregar</button>
+                </form>
+            </div>
+        </header>
+        <section>
+            <ul id="todo-list">
+                <!-- <li class="checked">Ir de compras<button class="eliminar-todo"><img src="assets/drop.svg"
+                            alt="drop icon"></button></li>
+                <li class="">Ir de compras<button class="eliminar-todo"><img src="assets/drop.svg"
+                            alt="drop icon"></button></li> -->
+            </ul>
+        </section>
+    </body>
+    <script type="module" src="./app.js"></script>
+</html>

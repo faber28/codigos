@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+form{
+    display: flex;
+    width: 100%;
+}
+
+/*Encabezado o header*/
+header {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Titulo del header*/
+
+header h1 {
+    color: #302e3d;
+}
+
+/*Contenedor de la entrada de text para crear el ToDo*/
+#input-container {
+    padding: 1.8em;
+    margin: 1em;
+    background-color: #91acce;
+    border-radius: 0.8em;
+    box-shadow: 0px 0px 15px -5px rgba(48, 46, 61, 0.4);
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+/*Entrada de texto para crear el ToDo*/
+
+#input-todo {
+    padding: 1.2em 0.4em;
+    width: 100%;
+    border-radius: 0.4em 0 0 0.4em;
+    border: none;
+    outline: none;
+    color: #302e3d;
+}
+
+/*Boton que guarda el ToDo*/
+#add-todo {
+    padding: 1.2em 0.6em;
+    border: none;
+    border-radius: 0 0.4em 0.4em 0;
+    background-color: #a3fcb5;
+    color: #302e3d;
+    cursor: pointer;
+}
+
+/*Seccion padre de la lista de ToDo's*/
+section {
+    padding: 0em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    width: 80%;
+}
+
+/*Items del ToDo*/
+li {
+    list-style-type: none;
+    background-color: #d1eae6;
+    padding: 0 0 0 0.8em;
+    cursor: pointer;
+    margin: 0.2em 0;
+    color: #302e3d;
+    border-radius: 0.4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:hover {
+    background-color: #a3fcb5;
+}
+
+li.checked {
+    text-decoration: line-through;
+}
+
+/*Boton de eliminar ToDo*/
+.eliminar-todo {
+    padding: 1.6em 0.6em;
+    border: none;
+    border-radius: 0 0.4em 0.4em 0;
+    background-color: transparent;
+    color: #302e3d;
+    cursor: pointer;
+}
+
+.eliminar-todo img {
+    width: 2em;
+    color: #302e3d;
+}
+
+.eliminar-todo:hover {
+    background-color: #d1eae6;
+}
+
+/*Breakpoints*/
+@media (max-width: 768px) {
+    #input-container,
+    ul {
+        width: 100%;
+    }
+}
